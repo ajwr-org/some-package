@@ -35,7 +35,7 @@ jobs:
     - name: "Test with Spack"
       uses: NOAA-EMC/spack-package-test@develop
       with:
-        package-name: ca-certificates-mozilla
+        package-name: gcc-runtime
         spack-compiler: gcc@11
         cache-secret: ${{ secrets.SPACKBUILDCACHE }}
         upload-artifacts: always
