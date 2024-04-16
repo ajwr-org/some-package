@@ -30,6 +30,12 @@ jobs:
       packages: write
 
     steps:
+
+    - name: checkout-ip
+      uses: actions/checkout@v4
+      repository: NOAA-EMC/NCEPLIBS-ip
+      with: 
+        path: ip
     
     - name: "Test with Spack"
       uses: NOAA-EMC/spack-package-test@develop
