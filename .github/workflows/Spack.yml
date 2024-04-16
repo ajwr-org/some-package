@@ -24,7 +24,6 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest"]
-        variants: ["+openmp +shared +pic precision=d", "+openmp ~shared ~pic precision=4", "~openmp ~shared +pic precision=8"]
     runs-on: ${{ matrix.os }}
     permissions:
       contents: read
@@ -35,7 +34,7 @@ jobs:
     - name: "Test with Spack"
       uses: NOAA-EMC/spack-package-test@develop
       with:
-        package-name: gcc-runtime
+        package-name: gmake
         spack-compiler: gcc@11
         cache-secret: ${{ secrets.SPACKBUILDCACHE }}
         upload-artifacts: always
