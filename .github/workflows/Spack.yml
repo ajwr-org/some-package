@@ -35,7 +35,7 @@ jobs:
     - name: "Test with Spack"
       uses: NOAA-EMC/spack-package-test@develop
       with:
-        package-name: ip
+        package-name: ca-certificates-mozilla
         package-variants: ${{ matrix.variants }}
         spack-compiler: gcc@11
         cache-secret: ${{ secrets.SPACKBUILDCACHE }}
