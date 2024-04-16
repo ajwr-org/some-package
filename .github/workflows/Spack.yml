@@ -42,7 +42,7 @@ jobs:
       uses: NOAA-EMC/spack-package-test@develop
       with:
         package-name: ip
-        package-variants: precision=4 ^cmake@3.25
+        package-variants: precision=4 ^cmake@3.26
         spack-compiler: gcc@11
         cache-secret: ${{ secrets.GITHUB_TOKEN }}
         upload-artifacts: always
