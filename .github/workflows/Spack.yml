@@ -10,10 +10,10 @@ name: Spack
 on:
   push:
     branches:
-    - develop
+    - main
   pull_request:
     branches:
-    - develop
+    - main
 
 env:
   ACTIONS_STEP_DEBUG: true
