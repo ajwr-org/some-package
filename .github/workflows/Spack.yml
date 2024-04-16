@@ -40,7 +40,6 @@ jobs:
         spack-compiler: gcc@11
         cache-secret: ${{ secrets.SPACKBUILDCACHE }}
         upload-artifacts: always
-        custom-recipe: spack/package.py
         spack-ref: 6f7eb3750cc100dc9cd6c02730d16ff8eb0c2d9e
 
   # This job validates the Spack recipe by making sure each cmake build option is represented
