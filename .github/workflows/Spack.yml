@@ -33,9 +33,10 @@ jobs:
 
     - name: checkout-ip
       uses: actions/checkout@v4
-      repository: NOAA-EMC/NCEPLIBS-ip
+      repository: AlexanderRichert-NOAA/NCEPLIBS-ip
+      ref: spackcitest
       with: 
-        path: ip
+        path: spack-devpkg-ip
     
     - name: "Test with Spack"
       uses: NOAA-EMC/spack-package-test@develop
